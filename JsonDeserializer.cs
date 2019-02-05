@@ -24,7 +24,7 @@
 		}
 		public static T Deserialize<T>(JsonReader reader, string fieldPrefix)
 		{
-			reader.IsScalarValue = JsonDeserializer.IsScalarValue(typeof(T));
+			//reader.IsScalarValue = JsonDeserializer.IsScalarValue(typeof(T));
 			return (T)new JsonDeserializer(reader, fieldPrefix).DeserializeValue(typeof(T));
 		}
 		public static object Deserialize(JsonReader reader, Type defaultType)
@@ -40,6 +40,7 @@
 			}
 			return true;
 		}
+
 		private object DeserializeValue(Type type)
 		{
 			_reader.SkipWhiteSpaces();

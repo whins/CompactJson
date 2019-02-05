@@ -45,10 +45,18 @@
 
 		public static T Deserialize<T>(Stream input)
 		{
+			if (ScalarDeserializer.IsScalar(typeof(T)))
+			{
+				throw new System.Exception("Not supported");
+			}
 			return Deserialize<T>(input, string.Empty);
 		}
 		public static T Deserialize<T>(Stream input, string fieldPrefix)
 		{
+			if (ScalarDeserializer.IsScalar(typeof(T)))
+			{
+				throw new System.Exception("Not supported");
+			}
 			using (JsonReader reader = new JsonReader(input))
 			{
 				return JsonDeserializer.Deserialize<T>(reader);
@@ -60,17 +68,28 @@
 		}
 		public static T DeserializeFromFile<T>(string file, string fieldPrefix)
 		{
+			if (ScalarDeserializer.IsScalar(typeof(T)))
+			{
+				throw new System.Exception("Not supported");
+			}
 			using (JsonReader reader = new JsonReader(new FileStream(file, FileMode.Open, FileAccess.Read)))
 			{
 				return JsonDeserializer.Deserialize<T>(reader);
 			}
 		}
+
 		public static T Deserialize<T>(string json)
 		{
 			return null == json ? default(T) : Deserialize<T>(json, string.Empty);
 		}
+
 		public static T Deserialize<T>(string json, string fieldPrefix)
 		{
+			if (ScalarDeserializer.IsScalar(typeof(T)))
+			{
+				return ScalarDeserializer.Deserialize<T>(json);
+			}
+
 			using (StringReader sr = new StringReader(json))
 			{
 				using (JsonReader reader = new JsonReader(sr))
@@ -80,13 +99,18 @@
 			}
 		}
 
-		public static object Deserialize(string json, System.Type defaultType)
+		public static object Deserialize(string json, System.Type type)
 		{
+			if (ScalarDeserializer.IsScalar(type))
+			{
+				return ScalarDeserializer.Deserialize(json, type);
+			}
+
 			using (StringReader sr = new StringReader(json))
 			{
 				using (JsonReader reader = new JsonReader(sr))
 				{
-					return JsonDeserializer.Deserialize(reader, defaultType);
+					return JsonDeserializer.Deserialize(reader, type);
 				}
 			}
 		}

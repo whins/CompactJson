@@ -9,7 +9,7 @@
 	{
 		private readonly TextReader _reader;
 		private bool _disposed;
-		public bool IsScalarValue;
+		//public bool IsScalarValue;
 		public JsonReader(TextReader input)
 		{
 			_reader = input;
@@ -160,7 +160,7 @@
 		}
 		private char ValidateChar(int c)
 		{
-			if (c == -1 && !this.IsScalarValue)
+			if (c == -1 /*&& !this.IsScalarValue*/)
 			{
 				throw new JsonException("End of data");
 			}
