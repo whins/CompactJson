@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.28527.54
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CompactJson2019", "CompactJson2019.csproj", "{75CA9C7E-87A4-4C3A-A281-5C86A99281AF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTest", "UnitTest\UnitTest.csproj", "{04AD82CC-3423-4BE3-ABA9-8F2435B5CD84}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{75CA9C7E-87A4-4C3A-A281-5C86A99281AF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{75CA9C7E-87A4-4C3A-A281-5C86A99281AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{75CA9C7E-87A4-4C3A-A281-5C86A99281AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{75CA9C7E-87A4-4C3A-A281-5C86A99281AF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{04AD82CC-3423-4BE3-ABA9-8F2435B5CD84}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{04AD82CC-3423-4BE3-ABA9-8F2435B5CD84}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{04AD82CC-3423-4BE3-ABA9-8F2435B5CD84}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{04AD82CC-3423-4BE3-ABA9-8F2435B5CD84}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BB5627F1-102D-49A5-A532-27AD54AFD255}
+	EndGlobalSection
+EndGlobal

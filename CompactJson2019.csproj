@@ -1,0 +1,131 @@
+﻿<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{75CA9C7E-87A4-4C3A-A281-5C86A99281AF}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <NoStandardLibraries>false</NoStandardLibraries>
+    <AssemblyName>ClassLibrary</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RootNamespace>CompactJson2019</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include=".gitignore" />
+    <Content Include="Backup\CompactJson.sln" />
+    <Content Include="json.ico" />
+    <Content Include="UpgradeLog.htm" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Converter.cs" />
+    <Compile Include="JsonDeserializer.cs" />
+    <Compile Include="JsonException.cs" />
+    <Compile Include="JsonReader.cs" />
+    <Compile Include="JsonSerializer.cs" />
+    <Compile Include="JsonTokens.cs" />
+    <Compile Include="JsonWriter.cs" />
+    <Compile Include="ListHelper.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ReflectionHelper.cs" />
+    <Compile Include="SerializeIncludingBaseAttribute.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include=".git\.MERGE_MSG.swp" />
+    <None Include=".git\COMMIT_EDITMSG" />
+    <None Include=".git\config" />
+    <None Include=".git\description" />
+    <None Include=".git\FETCH_HEAD" />
+    <None Include=".git\HEAD" />
+    <None Include=".git\hooks\applypatch-msg.sample" />
+    <None Include=".git\hooks\commit-msg.sample" />
+    <None Include=".git\hooks\fsmonitor-watchman.sample" />
+    <None Include=".git\hooks\post-update.sample" />
+    <None Include=".git\hooks\pre-applypatch.sample" />
+    <None Include=".git\hooks\pre-commit.sample" />
+    <None Include=".git\hooks\pre-push.sample" />
+    <None Include=".git\hooks\pre-rebase.sample" />
+    <None Include=".git\hooks\pre-receive.sample" />
+    <None Include=".git\hooks\prepare-commit-msg.sample" />
+    <None Include=".git\hooks\update.sample" />
+    <None Include=".git\index" />
+    <None Include=".git\info\exclude" />
+    <None Include=".git\logs\HEAD" />
+    <None Include=".git\logs\refs\heads\master" />
+    <None Include=".git\logs\refs\remotes\origin\master" />
+    <None Include=".git\objects\01\a6afc31d4495844b26eda186084502db31dd5c" />
+    <None Include=".git\objects\12\92d8480290f4d4edd11342dc457b1c8f749e82" />
+    <None Include=".git\objects\28\f036a55fbe52134f4c71b8eb4814082b5646fb" />
+    <None Include=".git\objects\2b\aee380410998f10f4c84c2cd1c93d902355397" />
+    <None Include=".git\objects\3f\e396e0e5f8eb71541a4bf366c09328abdeaf73" />
+    <None Include=".git\objects\4b\2d47a54fbba13de02969a7d52952b337812d65" />
+    <None Include=".git\objects\4e\0e3eb283861691985a1bba6e55417bc41b254b" />
+    <None Include=".git\objects\4f\90987b2d320f92f5c3434d870033e2a8a165db" />
+    <None Include=".git\objects\61\04b04f3fc6eccb87dd6fc3673b0b15fb4cedba" />
+    <None Include=".git\objects\61\8811af2ad56aa2748f30b9ae7445dd627714d2" />
+    <None Include=".git\objects\64\753b81b674619267815133e6f9686d55e8625e" />
+    <None Include=".git\objects\65\d33faa21650c4e7876128776ce465ba93717e5" />
+    <None Include=".git\objects\75\ea72f6e5f8d51215f7d55a3987d50e327d6320" />
+    <None Include=".git\objects\8c\c87ba33407fcda6518ec6c20da1ed20cfe89bd" />
+    <None Include=".git\objects\96\4995fd5fd2753db4b487f3524eb1976c8e66a3" />
+    <None Include=".git\objects\98\86447c5f1ceaacf84612d185e7d3e0ac7c4538" />
+    <None Include=".git\objects\9b\aed58a45d71c0b00f5c294fd8de7017cd0c134" />
+    <None Include=".git\objects\9e\d4793c1b6508efc7761fa203c3f72b68f254b1" />
+    <None Include=".git\objects\a2\ce337fda9d0f2f9e04e122ba3175a03c36b04c" />
+    <None Include=".git\objects\ad\499a935306df5ad3d5d02ed88d2e0017031d19" />
+    <None Include=".git\objects\ae\9c0018a5d6a15d4e3c04cc0140942b3b4d63ac" />
+    <None Include=".git\objects\ae\ec18cefd13c341bd0f92b504902dc9f16db946" />
+    <None Include=".git\objects\b4\44aeb4caa2da8d3c47ba1af21388c7b47d35be" />
+    <None Include=".git\objects\b9\e5a49c2bcca91a96e20bcc4be08462e337a9e4" />
+    <None Include=".git\objects\bf\49a04014a96d2dad45d6fde521d9a9708fa212" />
+    <None Include=".git\objects\c1\2572da4176257c4f5f476ca35fc1d7d265da1c" />
+    <None Include=".git\objects\c4\1a9e225dbb611af08b49c2f1056a4562635b18" />
+    <None Include=".git\objects\c6\e49efc9762d23f0ced4a10e1e39aae3048ae62" />
+    <None Include=".git\objects\c9\a420f7c8365ab8b448d1592d5a4c3b81e22039" />
+    <None Include=".git\objects\e3\bf3fe33c7832dc6eb49e38b56054b9eb935cec" />
+    <None Include=".git\objects\f7\1b1c080a57a7917cdadeadad0f974714407193" />
+    <None Include=".git\ORIG_HEAD" />
+    <None Include=".git\refs\heads\master" />
+    <None Include=".git\refs\remotes\origin\master" />
+    <None Include=".git\sourcetreeconfig.json" />
+    <None Include=".vs\CompactJson\v16\.suo" />
+    <None Include="README.md" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include=".git\objects\info\" />
+    <Folder Include=".git\objects\pack\" />
+    <Folder Include=".git\refs\tags\" />
+    <Folder Include=".vs\CompactJson2019\v16\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSHARP.Targets" />
+  <ProjectExtensions>
+    <VisualStudio AllowExistingFolder="true" />
+  </ProjectExtensions>
+</Project>
