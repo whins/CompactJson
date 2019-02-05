@@ -141,7 +141,7 @@
 		}
 		public virtual bool IsDelimiter(char c)
 		{
-			return (c == JsonTokens.EndObjectLiteralCharacter || c == JsonTokens.EndArrayCharacter || c == JsonTokens.ElementSeparator || IsWhiteSpace(c));
+			return (c == JsonTokens.OutOfRange || c == JsonTokens.EndObjectLiteralCharacter || c == JsonTokens.EndArrayCharacter || c == JsonTokens.ElementSeparator || IsWhiteSpace(c));
 		}
 		public virtual bool IsWhiteSpace(char c)
 		{

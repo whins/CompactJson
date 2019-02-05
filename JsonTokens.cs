@@ -9,5 +9,6 @@
 		public const char StringDelimiter = '"';
 		public const char ElementSeparator = ',';
 		public const char PairSeparator = ':';
+		public const char OutOfRange = '\uffff';
 	}
 }
