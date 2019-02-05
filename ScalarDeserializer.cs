@@ -1,9 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace CompactJson
+﻿namespace CompactJson
 {
+    using System;
+    using System.Collections.Generic;
+    using System.Text;
+
 	public class ScalarDeserializer
 	{
 		public static bool IsScalar(Type type)
@@ -35,10 +35,6 @@ namespace CompactJson
 				if (type == typeof(double))
 				{
 					return double.Parse(data);
-				}
-				if (type == typeof(char))
-				{
-					return char.Parse(data);
 				}
 				if (type == typeof(long))
 				{
