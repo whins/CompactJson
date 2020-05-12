@@ -7,9 +7,9 @@ using System.Runtime.InteropServices;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 [assembly: AssemblyTitle("CompactJson")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyDescription("Compact JSON framewor for .net Compact 2.0")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
+[assembly: AssemblyCompany("whins")]
 [assembly: AssemblyProduct("CompactJson")]
 [assembly: AssemblyCopyright("Copyright ©  2019")]
 [assembly: AssemblyTrademark("")]
