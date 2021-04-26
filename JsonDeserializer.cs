@@ -88,6 +88,11 @@
 			{
 				return _reader.ReadInt16();
 			}
+			if (type == typeof(bool))
+			{
+                return _reader.ReadBoolean();
+			}
+            
 			return ParseObject(type);
 		}
 		private object DeserializeList(Type listType)
