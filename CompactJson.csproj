@@ -80,6 +80,7 @@
   </Target>
   -->
   <PropertyGroup>
-    <PostBuildEvent>copy $(TargetPath) $(SolutionDir)publish_v2.1\$(TargetFileName);</PostBuildEvent>
+    <PostBuildEvent>copy $(TargetPath) $(SolutionDir)publish_v2.2\$(TargetFileName);
+copy $(TargetPath) $(SolutionDir)publish_v2.3\$(TargetFileName);</PostBuildEvent>
   </PropertyGroup>
 </Project>
